@@ -50,11 +50,11 @@ public class ServerWindow extends JFrame {
         setResizable(false); // Запрет на изменение размеров окна;
         setTitle("Chat Server"); // Название окна;
         setAlwaysOnTop(true); // Этот метод указывает, что окно должно быть всегда наверху, даже если пользователь активирует другие окна;
-
+        // Создание панели для кнопок:
         JPanel buttonPanel = new JPanel(new FlowLayout());
         buttonPanel.add(btnStart);
         buttonPanel.add(btnStop);
-
+        // Создание панели для поля логирования:
         JPanel logPanel = new JPanel(new BorderLayout());
         logPanel.add(new JScrollPane(log), BorderLayout.CENTER);
 
@@ -62,6 +62,8 @@ public class ServerWindow extends JFrame {
         /* Этот метод устанавливает менеджер компоновки окна. В данном случае используется GridLayout с
         одной строкой и двумя столбцами. Это означает, что кнопки btnStart и btnStop будут размещены в окне
         в одной строке, в двух столбцах.*/
+
+        // Добавление панелей на главное окно:
         add(logPanel, BorderLayout.CENTER);
         add(buttonPanel, BorderLayout.SOUTH);
 
