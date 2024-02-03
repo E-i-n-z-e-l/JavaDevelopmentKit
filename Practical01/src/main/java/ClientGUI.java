@@ -15,7 +15,7 @@ public class ClientGUI extends JFrame {
     private final JTextField tfMessage = new JTextField(); // Это поле ввода текста, предназначенное для ввода сообщений пользователем;
     private final JButton btnSend = new JButton("Send"); // Кнопка, предназначенная для отправки сообщений;
     private final JList<String> userList = new JList<>(); // Список пользователей;
-    ClientGUI() {
+    ClientGUI(ServerWindow serverwindow) {
         setDefaultCloseOperation(EXIT_ON_CLOSE); // Закрываешь окно - закрываешь программу;
         setLocationRelativeTo(null); // Вызов окна по центру экрана;
         setSize(WIDTH, HEIGHT); // Устанавливаем размер окна;
@@ -39,7 +39,7 @@ public class ClientGUI extends JFrame {
         add(scrollLog);
 
         DefaultListModel<String> userModel = new DefaultListModel<>();
-        userModel.addElement("User1"); // Добавьте имитацию имен пользователей
+        userModel.addElement("User1"); // Имитация имен пользователей;
         userModel.addElement("User2");
         userModel.addElement("User3");
         userModel.addElement("User4");

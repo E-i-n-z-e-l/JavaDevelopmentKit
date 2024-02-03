@@ -20,7 +20,6 @@ public class ServerWindow extends JFrame {
     private boolean isServerWorking;
     // Переменная isServerWorking, которая будет хранить значение true или false
     // в зависимости от того, работает ли сервер или нет;
-
     public ServerWindow() {
         isServerWorking = false; // Изначально сервер выключен;
         btnStop.addActionListener(new ActionListener() { // Процесс выключения сервера;
@@ -71,5 +70,4 @@ public class ServerWindow extends JFrame {
         log.setEditable(false); // Запрет редактирования текста пользователем
         add(scrollPane); // Добавление scrollPane на окно
     }
-
 }
