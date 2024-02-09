@@ -16,7 +16,8 @@ public class Ball extends Sprite {
         Поле halfHeight получает случайное значение между 20 и 50, все остальные поля получают случайные
         значения в диапазоне от 100 до 300. */
         halfHeight = 40 + (float) (Math.random() * 50f);
-        halfWidth = 60 + (float) (Math.random() * 70f);
+        // halfWidth = 60 + (float) (Math.random() * 70f); // Овалы;
+        halfWidth = halfHeight; // Круги;
         color = new Color(random.nextInt());
         vX = 100f + (float) (Math.random() * 200f);
         vY = 100f + (float) (Math.random() * 200f);

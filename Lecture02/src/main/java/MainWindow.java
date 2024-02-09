@@ -6,7 +6,7 @@ public class MainWindow extends JFrame {
     public static final int POS_Y = 200;
     public static final int WINDOW_WIDTH = 800;
     public static final int WINDOW_HEIGHT = 600;
-    private final Sprite[] sprites = new Sprite[20]; // Определяем количество шариков;
+    private final Sprite[] sprites = new Sprite[40]; // Определяем количество шариков;
 
     private MainWindow() {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
