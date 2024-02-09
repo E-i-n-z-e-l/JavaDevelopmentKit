@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class User extends JFrame {
+public class User extends JFrame{
     JButton btnSend = new JButton("Отправить сообщение");
     JTextArea logTextArea = new JTextArea(); // Создаем поле лога в котором выводится текст;
 
