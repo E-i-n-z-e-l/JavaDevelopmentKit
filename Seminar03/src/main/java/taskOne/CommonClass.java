@@ -13,6 +13,17 @@ import java.io.InputStream;
 //T должен реализовать интерфейс Comparable,
 //V должен реализовать интерфейс DataInput и расширять класс InputStream,
 //K должен расширять класс Number.
+
+/**
+ * Это обобщенный класс с тремя типовыми параметрами: T, V и K. <p></p>
+ * 1) T - параметр, который ограничен сравнимым интерфейсом Comparable, что означает, что тип T должен быть сравнимым.<p></p>
+ * 2) V - параметр, который ограничен смешанным интерфейсом InputStream и DataInput, что означает, что тип V должен
+ * быть подтипом InputStream и иметь возможности ввода данных.<p></p>
+ * 3) K - параметр, который ограничен классом Number, что означает, что тип K должен быть подклассом Number.
+ * @param <T>
+ * @param <V>
+ * @param <K>
+ */
 public class CommonClass<T extends Comparable<T>, V extends InputStream & DataInput, K extends Number> {
     T someT;
     V someV;
