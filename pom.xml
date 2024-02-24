@@ -17,6 +17,7 @@
         <module>Seminar03</module>
         <module>Practical03</module>
         <module>Practical04</module>
+        <module>PracticalBig</module>
     </modules>
 
     <properties>
